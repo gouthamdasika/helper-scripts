@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+  padding: 1rem;
+}
+
+h1 {
+  padding: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.grid > div:first-child {
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.grid > div:nth-child(2) {
+  text-align: left;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+table {
+  margin-bottom: 1rem;
+}
